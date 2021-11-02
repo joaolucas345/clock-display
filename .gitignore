@@ -1,0 +1,7 @@
+
+#root
+/project.md
+
+#backend
+/backend/node_modules/
+/backend/yarn.lock
