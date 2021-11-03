@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors'
 
 const init = () => {
     console.log(`server listening on port ${PORT}`)
@@ -6,6 +7,7 @@ const init = () => {
 
 const app = express()
 
+app.use(cors())
 app.use(express.json())
 
 import ClockRouter from '../routes/Clock'
