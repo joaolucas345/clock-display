@@ -11,6 +11,17 @@ const model = mongo.model("alarms", new mongo.Schema({
     time: String
 }))
 
+const funFactModel = mongo.model("fun_fact", new mongo.Schema({
+    id: String,
+    text: String
+}))
+
+const notificarionsModel = mongo.model("notifications", new mongo.Schema({
+    content: String,
+    group: String,
+    time: Number
+}))
+
 initMongo()
 
-export { model }
+export { model, funFactModel, notificarionsModel }
